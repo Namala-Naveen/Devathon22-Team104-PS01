@@ -1,0 +1,118 @@
+body{
+    background-color: white;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#left{
+    max-width: 40%;
+    background-color: white;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+#right{
+     flex-grow: 2.5;
+     background-color: aquamarine;
+     height: 745px;
+     background:  url("background.webp");
+     background-repeat:no-repeat;
+     background-position: center;
+     background-size: 100% 100%;
+    }
+    
+
+li{
+    list-style: none;
+    border-bottom: 1px solid rgb(177, 173, 173);
+}
+
+input {
+    border: none;
+    margin: 5px;
+    padding: 10px;
+}
+
+button{
+    padding: 10px 5em;
+    margin: 50px 2px 2px 2px;
+    background-color: #22223b;
+    text-align: center;
+    color: antiquewhite;
+    font-weight: bold;
+}
+button:hover{
+    padding: 11px 5.3em;
+    transition: 0.2s;
+}
+footer{ 
+    margin-top: 50px;  
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  align-content: flex-end;
+  height: 550px;
+}
+.footer1{
+    border-right: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    
+}
+.footer1 a , .complain a{
+    color: white;
+    font-size: medium;
+}
+
+.complain{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.overall{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+#h3{
+    font-size: x-large;
+    color: rgb(88, 85, 60);
+}
+a:hover{
+    text-decoration: white solid underline;
+}
+
+div img:hover{
+    width: 74px;
+    height: 74px;
+    cursor: pointer;
+}
+
+h3{
+    color:wheat;
+}
+.nitw{
+    padding-top: 0;
+    font-size: 40px;
+    display: inline-block;
+    position: relative;
+    bottom: 100px;
+    font-weight: 600;
+}
+
+

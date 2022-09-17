@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name set</title>
+    <link rel="stylesheet" href="{% static 'intro.css' %}">
+   
+</head>
+<body id="body">
+     <div id="left">
+        <ul>
+          <div class="nitw">National Institute of <br> Technology Warnagal</div>
+            <h1>LOG -IN</h1>
+            <h3 id="h3">Lets level up , together</h3>
+          <form action="">
+            <!-- <li> <input type="text" name="username" id="" placeholder="Name"> </li> -->
+            <li> <input type="text" name="email" id="" placeholder="Email"> </li>
+            <li> <input type="password" name="password" id="" placeholder="password" >  </li>
+            <button > <a href="{% url 'register' %}">Get Started</a>  </button>
+          </form>
+        </ul>
+     </div>     
+     <div id="right"> 
+          <div class="footer" id="footer"></div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    
+}
+
+.box{
+    height: 670px;
+    width: 730px;
+    position: relative;
+    left: 400px;
+    top: 70px;
+    background-color: white;
+    border: 0px solid white;
+    border-radius: 10px;
+}
+.bar{
+    background-color: black;
+    height: 50px;
+    color: white;
+    font-size: 30px;
+    padding-left: 260px ;
+    padding-top: 15px;
+    border-top: 5px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.name, .dob , .adhaar , .address , .specialisation ,.category , .marksheet , .castcer{
+    padding-left: 50px;
+    font-weight: 600;
+    font-size: 22px;
+}
+.sex{
+    padding-left: 50px;
+    font-size: 22px;
+}
+.fname{
+    border-radius: 5px;
+    height: 30px;
+    background-color: rgb(228, 228, 228);
+}
+.dp{
+    display: inline-block;
+    position: relative;
+    left: 545px;
+    bottom: 523px;
+}
+.dpfile{
+    display: inline-block;
+    position: relative;
+    left: 380px;
+    bottom:500px;
+}
+.dob_input{
+    border-radius: 5px;
+    height: 20px;
+    background-color: rgb(228, 228, 228);
+}
+.fsave{
+    padding: 14px 30px;
+    background-color: #FF8800;
+    border: none; 
+     font-weight: bold;  
+}
+.fsave:hover{
+    opacity: 0.9;
+    color: white;
+    padding: 13x 29px;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 2px 2px 2px tomato;
+    cursor: pointer;
+}
+.fsubmit{
+   background-color: #2f6aa2;
+   padding: 14px 30px;
+    border: none;
+    font-weight: bold;
+}
+.fsubmit:hover{
+    opacity: 0.9;
+    color: #ECF8F8;
+     padding: 13x 29px;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 2px 2px 2px blueviolet;
+     cursor: pointer;
+}
+.save , .submit{
+    padding-top: 10px;
+    padding-left: 280px;
+}
+.wsdc{
+    display: inline-block;
+    position: relative;
+    bottom: 650px;
+    left: 20px;
+}
+.stud{
+    font-size: 35px;
+    font-weight: 400;
+    color:white;
+    display: inline-block;
+    position: relative;
+    bottom: 617px;
+    right: 190px;
+}
+.courses {
+    margin-top: -50px;
+    display: inline-block;
+    position: relative;
+    top: 43px;
+    display: none;
+    height: 70px;
+}
+.unhide{
+    display:inline-block;
+}

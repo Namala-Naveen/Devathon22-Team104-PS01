@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block body_block %}
+<table>
+    <ul>
+        {% for dis in displays %}
+        <li>id : {{dis.id}}</li>
+        <li>name: {{dis.Name}}</li>
+        <li>birthdate: {{dis.Birthdate}}</li>
+        <li>adhaar: {{dis.adhaar}}</li>
+        <li>photo: {{dis.photo}}</li>
+        {% endfor %}
+    </ul>
+</table>
+{% endblock %}

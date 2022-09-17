@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block body_block %}
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label for="name"><b>Name:</b></label>
+    <input type="text" name="name" placeholder="enter your name"><br>
+    <label for="birthdate"><b>BirthDate:</b></label>
+    <input type="text" name="birthdate" placeholder="enter your name"><br>
+    <label for="adhaar"><b>Adhaar:</b></label>
+    <input type="text" name="adhaar" placeholder="enter your name"><br>
+    <label for="address"><b>Address:</b></label>
+    <input type="text" name="address" placeholder="enter your name"><br>
+    <label for="sex"><b>Gender:</b></label>
+    <input type="radio" name="sex" id='M' value="male"><label for="M">Male</label><br>
+    <input type="radio" name="sex" id='F' value="female"><label for="F">Female</label><br>
+    <label for="Specialization"><b>Specialization:</b></label>
+    <input type="text" name="Specialization" placeholder="enter your name"><br>
+    <label for="category"><b>Category:</b></label>
+    <input type="radio" name="category" id="P" value="PWD"><label for="P">PWD</label><br>
+    <label for="image">Image:</label>
+    <input type="file" name="image" ><br>
+    <label for="marksheet"><b>marksheet:</b></label>
+    <input type="file" name="marksheet"><br>
+    <label for="casteCertificate"><b>casteCertificate:</b></label>
+    <input type="file" name="casteCertificate"><br>
+    <input type="submit" class="btn btn-primary" value="register">
+</form>
+{% endblock %}

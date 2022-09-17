@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission Form</title>
+    <link rel="stylesheet" href="{% static 'style2.css' %}">
+</head>
+<body>
+    <div class="box">
+        <div class="bar">Registration Form</div>
+        <div class="name"><pre>Name : <input type="text" placeholder=" First Name" size="20" class="fname">  <input type="text" placeholder=" Last Name" size="20" class="fname"></pre></div>
+        <div class="dob"><pre>Date Of Birth : <input type="date" class="dob_input"></pre></div>
+        <div class="sex"><b><p>Gender : </b><input type="radio" name="gender" value="Male" id="M">
+            <label for="M" class="nonbold">Male</label> <input type="radio" name="gender" value="Female" id="F">
+            <label for="F" class="nonbold">Female</label> <input type="radio" name="gender" value="Others" id="O">
+            <label for="O" class="nonbold">Others</label></p></div>
+        <div class="adhaar"><pre>Adhaar : <input type="text" placeholder=" Adhaar no." size="46" class="fname"></pre></div>
+        <div class="address"><pre>Address : <input type="text" placeholder=" Address" size="44" class="fname"></pre></div>
+        <div class="specialisation"><pre>Specialisation : <select name="Specialisation" class="fname" id="asking">
+            <option value="NONE">Department</option>
+            <option value="CSE">CSE</option>
+            <option value="EEE">EEE</option>
+            <option value="MECH">MECH</option>  </select >  <select multiple name="courses_CSE" class="fname courses cse">
+                                                <option value="NONE">NONE OF THE BELOW</option>
+                                                <option value="XA">DBMS</option>
+                                                <option value="XB">OOPS</option>
+                                                <option value="XC">DSA</option></select></select><select multiple name="courses_EEE" class="fname courses eee">
+                                                <option value="NONE">NONE OF THE BELOW</option>
+                                                <option value="YA">POWER SYSTEM</option>
+                                                <option value="YB">ELECTRONICS</option>
+                                                <option value="YC">CIRCUITS</option></select></select><select multiple name="courses_CSE" class="fname courses mech">
+                                                <option value="NONE">NONE OF THE BELOW</option>
+                                                <option value="ZA">FLUID</option>
+                                                <option value="ZB">QUANTUM</option>
+                                                <option value="ZC">AUTOMOBILE</option></select></pre></div>
+        <div class="category"><pre>Category : <select name="Category" class="fname">
+            <option value="General">General</option>
+            <option value="EWS">EWS</option><option value="OBC">OBC</option>
+            <option value="SC">SC</option><option value="ST">ST</option>
+            <option value="PWD">PWD</option></select></pre></div>
+        <div class="marksheet"><pre>Upload your Marksheet :<input type="file" name="marksheet"/></pre></div>
+        <div class="castcer"><pre>Upload your Cast Certificate :<input type="file" name="castcer"/></pre></div>
+        <div class="save"><input type="submit" name="save" value="SAVE" class="fsave"> <input type="submit" name="submit" value="SUBMIT" class="fsubmit"> </div>
+        <div class="dp"><img src="{% static 'profile.webp' %}" alt="profile picture" width="150px"></div>
+        <div class="dpfile"><label for="img"></label>
+                            <input type="file" id="img" name="img" accept="image/*"></div>
+    </div>
+    <div class="wsdc"><img src="{% static 'logo.png' %}" alt="wsdc" height="120px"></div>
+    <div class="stud">Student Portal</div>
+    <script src="{% static '/functioning.js' %}"></script>
+</body>
+</html>
